@@ -1,0 +1,46 @@
+header {
+    display: flex;
+    background-color: rgb(202, 121, 21);
+    justify-items: center;
+
+}
+nav ul{
+    display: flex;
+    gap: 1.3em ;
+}
+
+.seccion1 {
+background-color: antiquewhite;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 50px;
+}
+
+.acerca-imagen{
+
+    padding: 100px;
+    align-items: end;
+}
+.seccion2 img{
+    width: 70%;
+    padding: 5%;
+    margin: 10%;
+}
+
+h3 {
+background-color: blanchedalmond;
+width: 100%;
+color: brown;
+padding: 3%;
+}
+
+p {
+    text-align: center;
+  }
+
+  /* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 600px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+    .seccion1 {color: rgb(202, 27, 158);}
+  }
