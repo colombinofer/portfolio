@@ -1,46 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
+    background: #2e7d32;
+    color: white;
+    padding: 10px 0;
     display: flex;
-    background-color: rgb(202, 121, 21);
-    justify-items: center;
-
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
 }
-nav ul{
+
+header .logo {
+    font-size: 24px;
+}
+
+header ul {
+    list-style: none;
     display: flex;
-    gap: 1.3em ;
 }
 
-.seccion1 {
-background-color: antiquewhite;
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 50px;
+header ul li {
+    margin-left: 20px;
 }
 
-.acerca-imagen{
-
-    padding: 100px;
-    align-items: end;
-}
-.seccion2 img{
-    width: 70%;
-    padding: 5%;
-    margin: 10%;
+header ul li a {
+    color: white;
+    text-decoration: none;
 }
 
-h3 {
-background-color: blanchedalmond;
-width: 100%;
-color: brown;
-padding: 3%;
-}
-
-p {
+#hero {
+    background: url('img/hero-background.jpg') no-repeat center center/cover;
+    color: white;
     text-align: center;
-  }
+    padding: 100px 20px;
+}
 
-  /* Estilos para pantallas más pequeñas (hasta 768px) */
-@media (max-width: 600px) {
-    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
-    .seccion1 {color: rgb(202, 27, 158);}
-  }
+.hero-content h1 {
+    font-size: 48px;
+}
+
+.hero-content p {
+    font-size: 24px;
+}
+
+.hero-content .btn {
+    background: #388e3c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+#beneficios .beneficios-container, 
+#productos .productos-container, 
+#testimonios .testimonios-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.beneficio, .producto, .testimonio {
+    flex: 1 1 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.beneficio img, .producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    background: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .social-media a img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+}

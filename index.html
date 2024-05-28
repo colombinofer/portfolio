@@ -3,54 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>miprimeraweb</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Aceite Cannábico Natural</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-        <a href="index.html"></a>
-            <nav>
-        
-                <ul>
-                    <li>Inicio</li>
-                    <li>Acerca de mi</li>
-                    <li>Trabajos</li>
-                    <li>Servicios</li>
-                    <li>Contactos</li>
-                </ul>
-            </nav>
-        </header>
-        <main id="seccion-principal">
-            <section class="seccion1">
-                <div class="acerca-de">
-                    <h2>Acerca de mi</h2>
-                    <p>Fernanda colombino</p>
-                    <p>HOLA A TODOS</p>
+    <header>
+        <nav>
+            <div class="logo">Aceite Cannábico Natural</div>
+            <ul>
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                </div>
-                <div class="acerca-imagen">
-                    <img src="img/descarga.jpg" alt="">
-                </div>
-            </section>
-            <section class="seccion2">
-                <img src="img/descarga (1).jpg" alt="imagen de carrusel">
-                <footer>
-                    <h3> contacto</h3>
-                    <!-- CONTENEDOR SEMÁNTICO -->
-<header>
-    <!-- RESTO DE ELEMENTOS -->       
-    <li><a href="formulario/formulario.html">Contacto</a></li>
-    <!-- RESTO DE ELEMENTOS -->
-</header>
-                </footer>
-            </section>
-        </main>
-    </div>
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Bienvenido a Aceite Cannábico Natural</h1>
+            <p>Descubre los beneficios del aceite cannábico de alta calidad</p>
+            <a href="#productos" class="btn">Nuestros Productos</a>
+        </div>
+    </section>
+
+    <section id="beneficios">
+        <h2>Beneficios del Aceite Cannábico</h2>
+        <div class="beneficios-container">
+            <div class="beneficio">
+                <img src="imagenes/beneficio1.jpg" alt="Alivio del dolor">
+                <h3>Alivio del Dolor</h3>
+                <p>El aceite cannábico puede ayudar a reducir el dolor crónico y la inflamación.</p>
+            </div>
+            <div class="beneficio">
+                <img src="imagenes/beneficio2.jpg" alt="Mejora del sueño">
+                <h3>Mejora del Sueño</h3>
+                <p>Promueve un sueño reparador y mejora la calidad del descanso.</p>
+            </div>
+            <div class="beneficio">
+                <img src="imagenes/beneficio3.jpg" alt="Reducción del estrés">
+                <h3>Reducción del Estrés</h3>
+                <p>Ayuda a reducir la ansiedad y el estrés, promoviendo un estado de calma.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="productos-container">
+            <div class="producto">
+                <img src="imagenes/producto1.jpg" alt="Aceite Cannábico 500mg">
+                <h3>Aceite Cannábico 500mg</h3>
+                <p>Ideal para quienes buscan un alivio moderado.</p>
+                <a href="#contacto" class="btn">Comprar Ahora</a>
+            </div>
+            <div class="producto">
+                <img src="imagenes/producto2.jpg" alt="Aceite Cannábico 1000mg">
+                <h3>Aceite Cannábico 1000mg</h3>
+                <p>Perfecto para quienes necesitan un alivio más potente.</p>
+                <a href="#contacto" class="btn">Comprar Ahora</a>
+            </div>
+            <div class="producto">
+                <img src="imagenes/producto3.jpg" alt="Aceite Cannábico 1500mg">
+                <h3>Aceite Cannábico 1500mg</h3>
+                <p>Para los que buscan un alivio intensivo y de larga duración.</p>
+                <a href="#contacto" class="btn">Comprar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios">
+        <h2>Testimonios</h2>
+        <div class="testimonios-container">
+            <div class="testimonio">
+                <p>"Este aceite ha cambiado mi vida, ahora duermo mejor y el dolor ha disminuido significativamente."</p>
+                <h4>María López</h4>
+            </div>
+            <div class="testimonio">
+                <p>"Increíble cómo me ha ayudado con mi ansiedad. Lo recomiendo 100%."</p>
+                <h4>Carlos Méndez</h4>
+            </div>
+            <div class="testimonio">
+                <p>"Excelente producto, la calidad es inigualable. ¡Gracias!"</p>
+                <h4>Ana Rodríguez</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Para más información o para realizar un pedido, completa el siguiente formulario:</p>
+        <form action="submit_form.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aceite Cannábico Natural. Todos los derechos reservados.</p>
+        <div class="social-media">
+            <a href="#"><img src="img/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="img/instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="img/twitter-icon.png" alt="Twitter"></a>
+        </div>
+    </footer>
 </body>
-<button id="btn-generar">Generar Frase Aleatoria</button>
-<footer id="footer">
-    <p id="frase"></p>
-</footer>
-<script src="index.js"></script>
 </html>
